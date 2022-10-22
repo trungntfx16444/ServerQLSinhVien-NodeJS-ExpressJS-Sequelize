@@ -8,18 +8,18 @@ const {
   timSinhVienTheoTen,
 } = require("../controllers/sinhVien.controller");
 // lay ds Sinh Vien
-sinhVienRouter.get("/", layDSSinhVien);
+sinhVienRouter.get("/sinhvien", layDSSinhVien);
 
 // tim sinh vient heo ten
-sinhVienRouter.get("/:ten", timSinhVienTheoTen);
+sinhVienRouter.get("/sinhvien/:ten", timSinhVienTheoTen);
 
 // them Sinh Vien
-sinhVienRouter.post("/", themSinhVien);
+sinhVienRouter.post("/sinhvien", themSinhVien);
 
 // cap  Cap Nhat Sinh Vien
-sinhVienRouter.put("/:id", capNhatSinhVien);
+sinhVienRouter.put("/sinhvien/:id", capNhatSinhVien);
 
 // xoa Sinh Vien
-sinhVienRouter.delete("/:id", xoaSinhVien);
+sinhVienRouter.delete("/sinhvien/:id", xoaSinhVien);
 
 module.exports = sinhVienRouter;

@@ -33,7 +33,7 @@ const layDSSinhVien = async (req, res) => {
 const timSinhVienTheoTen = async (req, res) => {
   const { ten } = req.params;
   const dsSinhVien = await layByName(ten);
-  if (dsSinhVien) {
+  if (dsSinhVien.length !== 0) {
     res.status(200).send(dsSinhVien);
   } else {
     res.status(404).send("Sinh Viên Không tồn tại");

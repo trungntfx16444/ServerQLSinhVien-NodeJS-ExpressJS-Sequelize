@@ -1,4 +1,3 @@
-/*
 module.exports = {
   HOST: "localhost",
   USER: "root",
@@ -6,7 +5,8 @@ module.exports = {
   DB: "quanly_sinhvien",
   dialect: "mysql",
 };
-*/
+
+/*
 module.exports = {
   HOST: "remotemysql.com",
   USER: "yHNF44ZW0u",
@@ -14,3 +14,4 @@ module.exports = {
   DB: "yHNF44ZW0u",
   dialect: "mysql",
 };
+*/

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Danh sách API</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <div class="container mt-5 w-50">
+        <div class="card text-left">
+            <div class="card-header">
+                <h3 class="card-title">Danh Sách API</h3>
+            </div>
+            <div class="card-body">
+                <div class="border border-link p-2 mb-2">
+                    <h5 class="card-title">Lấy danh sách sinh viên</h5>
+                    <nav class="navbar navbar-light bg-light w-100">
+                        <form class="form-inline w-100">
+                            <div class="input-group w-100">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text font-weight-bold" id="basic-addon1">GET</span>
+                                </div>
+                                <input type="text" class="form-control font-weight-bold"
+                                    value="https://serverqlsv1.herokuapp.com/sinhvien" aria-label="Username"
+                                    aria-describedby="basic-addon1" disabled>
+                            </div>
+                        </form>
+                    </nav>
+                </div>
+                <div class="border border-link p-2 mb-2">
+                    <h5 class="card-title">Tìm họ tên sinh viên</h5>
+                    <nav class="navbar navbar-light bg-light w-100">
+                        <form class="form-inline w-100">
+                            <div class="input-group w-100">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text font-weight-bold" id="basic-addon1">GET</span>
+                                </div>
+                                <input type="text" class="form-control font-weight-bold"
+                                    value="https://serverqlsv1.herokuapp.com/sinhvien/${hoVaTen}" aria-label="Username"
+                                    aria-describedby="basic-addon1" disabled>
+                            </div>
+                            <div class="input-group mb-3 w-100">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1 ">Ví dụ</span>
+                                </div>
+                                <input type="text" class="form-control"
+                                    value="https://serverqlsv1.herokuapp.com/sinhvien/Bui Van A" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </form>
+                    </nav>
+                </div>
+                <div class="border border-link p-2 mb-2">
+                    <h5 class="card-title">Thêm sinh viên</h5>
+                    <nav class="navbar navbar-light bg-light w-100">
+                        <form class="form-inline w-100">
+                            <div class="input-group w-100">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text font-weight-bold" id="basic-addon1">POST</span>
+                                </div>
+                                <input type="text" class="form-control font-weight-bold"
+                                    value="https://serverqlsv1.herokuapp.com/sinhvien" aria-label="Username"
+                                    aria-describedby="basic-addon1" disabled>
+                            </div>
+                            <div class="input-group mb-3 w-100">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1 ">Ví dụ</span>
+                                </div>
+                                <input type="text" class="form-control"
+                                    value="{name : bui van be, email: be@gmail.com, sdt: 1234, toan:5.2, ly:7.3, hoa:6.3}"
+                                    aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </form>
+                    </nav>
+                </div>
+                <div class="border border-link p-2 mb-2">
+                    <h5 class="card-title">Cập nhật sinh viên</h5>
+                    <nav class="navbar navbar-light bg-light w-100">
+                        <form class="form-inline w-100">
+                            <div class="input-group w-100">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text font-weight-bold" id="basic-addon1">PUT</span>
+                                </div>
+                                <input type="text" class="form-control font-weight-bold"
+                                    value="https://serverqlsv1.herokuapp.com/sinhvien/10"
+                                    aria-describedby="basic-addon1" disabled>
+                            </div>
+                            <div class="input-group w-100">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">Ví dụ</span>
+                                </div>
+                                <textarea class="form-control" rows="9">https://serverqlsv1.herokuapp.com/sinhvien/${ID}
+{
+    "name": "Nguyen Van tao",
+    "email": "vanA@gmail.com",
+    "sdt" : "0924927522",
+    "toan" : "9",
+    "ly": "7",
+    "hoa" : "8"
+}
+
+                                </textarea>
+                            </div>
+                        </form>
+                    </nav>
+                </div>
+                <div class="border border-link p-2 mb-2">
+                    <h5 class="card-title">Xóa sinh viên</h5>
+                    <nav class="navbar navbar-light bg-light w-100">
+                        <form class="form-inline w-100">
+                            <div class="input-group w-100">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text font-weight-bold" id="basic-addon1">DELETE</span>
+                                </div>
+                                <input type="text" class="form-control font-weight-bold"
+                                    value="https://serverqlsv1.herokuapp.com/sinhvien/${id}" aria-label="Username"
+                                    aria-describedby="basic-addon1" disabled>
+                            </div>
+                            <div class="input-group mb-3 w-100">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1 ">Ví dụ</span>
+                                </div>
+                                <input type="text" class="form-control"
+                                    value="https://serverqlsv1.herokuapp.com/sinhvien/10">
+                            </div>
+                        </form>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
